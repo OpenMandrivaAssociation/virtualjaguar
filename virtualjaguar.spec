@@ -1,5 +1,5 @@
 %define name	virtualjaguar
-%define version	2.0.1
+%define version	2.0.2
 %define release	%mkrel 1
 
 Summary:	Atari Jaguar Emulator
@@ -27,10 +27,10 @@ but has also been extended and rewritten so that we can enjoy Atari Jaguar
 emulation on every platform that has a GCC compiler and a port of Qt.
 
 %prep
-%setup -q
+%setup -q -n %{name}
 
 %build
-%make
+make
 
 %install
 %__rm -rf %{buildroot}
