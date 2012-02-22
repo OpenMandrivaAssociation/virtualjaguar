@@ -1,21 +1,16 @@
-%define name	virtualjaguar
-%define version	2.0.2
-%define release	%mkrel 1
-
+Name:		virtualjaguar
+Version:	2.0.2
+Release:	%mkrel 1
 Summary:	Atari Jaguar Emulator
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
 Group:		Emulators
 License:	GPLv3
-URL:		http://boycottadvance.emuunlim.com/
+URL:		http://icculus.org/virtualjaguar/
 Source0:	http://www.icculus.org/virtualjaguar/tarballs/%{name}-%{version}.tar.bz2
 BuildRequires:	SDL-devel
 BuildRequires:	qt4-devel
 BuildRequires:	zlib-devel
 BuildRequires:	mesagl-devel
 BuildRequires:	libcdio-devel
-BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 Virtual Jaguar is software dedicated to emulating the Atari Jaguar hardware on
@@ -42,7 +37,7 @@ make
 %__install -m 644 res/vj.xpm %{buildroot}%{_datadir}/pixmaps/%{name}.xpm
 
 %__mkdir_p %{buildroot}%{_datadir}/applications
-cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
+%__cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Name=Virtual Jaguar
 Comment=%{summary}
@@ -58,7 +53,6 @@ EOF
 %__rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root,-)
 %doc docs/*
 %{_bindir}/%{name}
 %{_datadir}/pixmaps/%{name}.xpm
