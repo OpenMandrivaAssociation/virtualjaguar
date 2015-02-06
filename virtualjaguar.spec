@@ -1,7 +1,7 @@
 Summary:	Atari Jaguar Emulator
 Name:		virtualjaguar
 Version:	2.1.0
-Release:	1
+Release:	2
 Group:		Emulators
 License:	GPLv3
 URL:		http://icculus.org/virtualjaguar/
