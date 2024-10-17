@@ -4,7 +4,7 @@ Version:	2.1.0
 Release:	2
 Group:		Emulators
 License:	GPLv3
-URL:		http://icculus.org/virtualjaguar/
+URL:		https://icculus.org/virtualjaguar/
 Source0:	http://www.icculus.org/virtualjaguar/tarballs/%{name}-%{version}.tar.bz2
 BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig(gl)
