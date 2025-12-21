@@ -6,6 +6,7 @@ Group:		Emulators
 License:	GPLv3
 URL:		https://icculus.org/virtualjaguar/
 Source0:	http://www.icculus.org/virtualjaguar/tarballs/%{name}-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
